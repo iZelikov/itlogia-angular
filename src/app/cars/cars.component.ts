@@ -135,7 +135,7 @@ export class CarsComponent {
     this.carsFilter.forEach((el) => (el.active = false));
     filter.active = true;
     const filterText = filter.name.toLowerCase();
-    if (filter.name === "все марки") {
+    if (filterText == "все марки") {
       this.cars = this.baseCars;
     } else {
       this.cars = this.baseCars.filter((item) => item.title.toLowerCase().includes(filterText));
