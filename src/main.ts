@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
-import { CarsComponent } from './app/cars/cars.component';
+import { Component } from "@angular/core";
+import { bootstrapApplication } from "@angular/platform-browser";
+import { CarsComponent } from "./app/cars/cars.component";
+import { provideHttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   imports: [CarsComponent],
   template: `<app-cars></app-cars>`,
 })
 export class App {
-  name = 'Angular';
+  name = "Angular";
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App, {
+  providers: [provideHttpClient()],
+});
