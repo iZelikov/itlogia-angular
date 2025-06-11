@@ -1,5 +1,5 @@
 # itlogia-angular
-![Машинка для красоты](/images/main-car.png)
+![Машинка для красоты](public/images/main-car.png)
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/iZelikov/itlogia-course-frontend)
 
